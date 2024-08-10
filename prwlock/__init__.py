@@ -8,7 +8,7 @@ __version__ = '0.4.1'
 __all__ = []
 
 if platform.system() == 'Windows':
-    from wrwlock import RWLockWindows as RWLock
+    from .wrwlock import RWLockWindows as RWLock
 else:
     from . import prwlock as _prwlock
 
